@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import "../styles/App.css";
+// import "../styles/App.css";
 
-const App = () => {
-  let [count, setCount] = useState(0);
+let App = () => {
+  const [count, setCount] = useState(0);
 
   return (
-    <div class="ball">
+    <div className="ball">
       <h1
-        class="count"
-        ondoubleclick={() => {
+        className="count"
+        onDoubleClick={() => {
           alert("cant edit it");
         }}
       >
         {count}
       </h1>
       <button
-        class="increment-button"
-        onclick={() => {
+        className="increment-button"
+        onClick={() => {
           setCount(count + 1);
         }}
       >
